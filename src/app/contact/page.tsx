@@ -58,17 +58,22 @@ export default function ContactPage() {
 
             <div>
               <p className="eyebrow text-primary">Elsewhere</p>
-              <ul className="mt-6 flex gap-3">
+              <ul className="mt-6 space-y-5">
                 {site.social.map((item) => (
                   <li key={item.label}>
                     <a
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={item.label}
-                      className="grid size-12 place-items-center rounded-full border border-line bg-white transition-colors hover:border-primary hover:bg-primary hover:text-white"
+                      className="group flex items-center gap-4"
                     >
-                      <SocialIcon icon={item.icon} className="size-4" />
+                      <span className="grid size-12 place-items-center rounded-full border border-line bg-white transition-colors group-hover:border-primary group-hover:bg-primary group-hover:text-white">
+                        <SocialIcon icon={item.icon} className="size-4" />
+                      </span>
+                      <span>
+                        <span className="eyebrow block text-ink-soft">Instagram</span>
+                        <span className="mt-1 block text-lg">{item.label}</span>
+                      </span>
                     </a>
                   </li>
                 ))}

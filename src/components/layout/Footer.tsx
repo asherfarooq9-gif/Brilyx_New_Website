@@ -55,17 +55,19 @@ export function Footer() {
                 WhatsApp {site.whatsapp.display}
               </a>
             </li>
-            <li className="flex gap-2 pt-2">
+            <li className="pt-2">
               {site.social.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={item.label}
-                  className="grid size-11 place-items-center rounded-full border lg:size-10 border-line text-ink transition-colors hover:border-primary hover:bg-primary hover:text-white"
+                  className="inline-flex items-center gap-2.5 text-ink-soft transition-colors hover:text-primary"
                 >
-                  <SocialIcon icon={item.icon} className="size-4" />
+                  <span className="grid size-11 place-items-center rounded-full border border-line text-ink transition-colors hover:border-primary hover:bg-primary hover:text-white lg:size-10">
+                    <SocialIcon icon={item.icon} className="size-4" />
+                  </span>
+                  <span className="text-sm">@{item.label}</span>
                 </a>
               ))}
             </li>

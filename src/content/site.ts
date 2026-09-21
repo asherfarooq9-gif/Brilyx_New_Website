@@ -20,7 +20,7 @@ export const site = {
   email: "brilyx.0@gmail.com",
   whatsapp: { display: "+92 339 5224149", href: "https://wa.me/923395224149" },
   social: [
-    { label: "Instagram", href: "https://www.instagram.com/brilyxofficial/", icon: "instagram" },
+    { label: "brilyxofficial", href: "https://www.instagram.com/brilyxofficial/", icon: "instagram" },
   ] satisfies SocialLink[],
   nav: [
     { label: "Home", href: "/" },
