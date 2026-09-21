@@ -4,9 +4,16 @@ export type SocialLink = {
   icon: "instagram" | "x"
 }
 
+const DEFAULT_SITE_URL = "https://www.brilyx.com"
+
+function resolveSiteUrl(): string {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim()
+  return raw || DEFAULT_SITE_URL
+}
+
 export const site = {
   name: "BRILYX",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.brilyx.com",
+  url: resolveSiteUrl(),
   tagline: "Digital experiences. Engineered to impress.",
   description:
     "BRILYX is a digital engineering studio building custom-coded websites, applications, AI automation and chatbot integrations for ambitious businesses.",
