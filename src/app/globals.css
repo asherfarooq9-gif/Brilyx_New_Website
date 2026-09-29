@@ -73,58 +73,6 @@ body:has(dialog[open]) .whatsapp-button {
   pointer-events: none;
 }
 
-@media (max-width: 767px) {
-  html:not([data-menu-open="true"]) .site-header-bar {
-    background: white;
-    color: var(--color-ink);
-    border-color: var(--color-line);
-  }
-
-  html:not([data-menu-open="true"]) .header-logo-light { display: none; }
-  html:not([data-menu-open="true"]) .header-logo-dark { display: block; }
-  html:not([data-menu-open="true"]) .site-header-bar :focus-visible { outline-color: var(--color-primary); }
-
-  .photo-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 0;
-    padding-top: 4rem;
-    background: var(--color-primary-deep);
-  }
-
-  .photo-hero .hero-media {
-    position: relative;
-    inset: auto;
-    z-index: 0;
-    width: 100%;
-  }
-
-  .media-full-mobile {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    aspect-ratio: var(--photo-ratio);
-  }
-
-  .media-full-mobile img { object-fit: contain; }
-  .photo-hero .hero-scrim { display: none; }
-  .photo-hero .hero-copy { padding-block: 2.5rem 3rem; }
-  .photo-hero .text-on-photo { text-shadow: none; }
-
-  .home-hero .hero-play {
-    position: relative;
-    inset: auto;
-    flex-shrink: 0;
-    margin: 0 1.5rem 3rem;
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .home-hero .hero-play .ring-spin { display: none; }
-  .home-hero .hero-featured { position: relative; inset: auto; }
-}
-
 /* ---------- Base ---------- */
 html {
   background: var(--color-page);
