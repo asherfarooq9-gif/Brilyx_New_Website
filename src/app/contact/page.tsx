@@ -3,6 +3,7 @@ import { Mail, MessageCircle } from "lucide-react"
 import { ContactForm } from "@/components/sections/ContactForm"
 import { PageHero } from "@/components/sections/PageHero"
 import { SocialIcon } from "@/components/ui/SocialIcon"
+import { assets } from "@/content/assets"
 import { site } from "@/content/site"
 
 export const metadata: Metadata = {
@@ -19,6 +20,9 @@ export default function ContactPage() {
         title="Let's build something remarkable."
         lead="Tell us what you have in mind. We'll help turn it into an exceptional digital product."
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+        background={assets.contactHero}
+        naturalPhoto
+        mobileFullPhoto
       />
 
       <section className="section-y bg-page">

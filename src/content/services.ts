@@ -9,6 +9,7 @@ export type Service = {
   detail: string
   capabilities: readonly { title: string; description: string }[]
   asset: AssetKey
+  heroAsset: AssetKey
 }
 
 export const services = [
@@ -30,6 +31,7 @@ export const services = [
       { title: "CMS & website maintenance", description: "Flexible content management, regular updates, and ongoing technical support." },
     ],
     asset: "serviceWebsite",
+    heroAsset: "websiteDevelopmentHero",
   },
   {
     slug: "app-development",
@@ -49,6 +51,7 @@ export const services = [
       { title: "App maintenance & optimization", description: "Bug fixes, performance improvements, and compatibility updates as your product grows." },
     ],
     asset: "serviceApp",
+    heroAsset: "appDevelopmentHero",
   },
   {
     slug: "ai-automation",
@@ -68,6 +71,7 @@ export const services = [
       { title: "Custom automation solutions", description: "Purpose-built workflows shaped around your operations, with monitoring and human review where needed." },
     ],
     asset: "serviceAutomation",
+    heroAsset: "aiAutomationHero",
   },
   {
     slug: "chatbot-integration",
@@ -87,6 +91,7 @@ export const services = [
       { title: "Custom chatbot integrations", description: "Connect assistants to CRMs, databases, calendars, and business tools to perform authorized actions." },
     ],
     asset: "serviceChatbot",
+    heroAsset: "aiChatbotHero",
   },
 ] as const satisfies readonly Service[]
 

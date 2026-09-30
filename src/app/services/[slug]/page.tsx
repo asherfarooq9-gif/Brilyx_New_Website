@@ -62,6 +62,9 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
         title={service.title}
         lead={service.summary}
         crumbs={[{ label: "Home", href: "/" }, { label: "Services", href: "/services" }, { label: service.title }]}
+        background={assets[service.heroAsset]}
+        naturalPhoto
+        mobileFullPhoto
       >
         <ButtonLink href="/contact" variant="light">
           Start a Project
