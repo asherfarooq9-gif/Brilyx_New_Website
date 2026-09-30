@@ -86,6 +86,13 @@ export const assets = {
     label: "Service 04 — designed chat interface inside a real website",
     variant: "dots",
   },
+  capabilitiesStudio: {
+    src: "/images/services/homepage/capabilities-studio.png",
+    ratio: "1672 / 941",
+    alt: "A sunlit digital studio workspace showing a desktop website, mobile app interface, connected automation lines and an AI conversation panel",
+    label: "Capabilities — connected digital products in a warm studio",
+    variant: "grid",
+  },
   whyBand: {
     src: "/images/backgrounds/digital-grid.svg",
     ratio: "16 / 9",

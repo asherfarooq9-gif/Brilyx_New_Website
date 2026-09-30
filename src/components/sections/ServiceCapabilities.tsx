@@ -1,5 +1,7 @@
 import { Globe2, MessageSquareText, Smartphone, Workflow } from "lucide-react"
 import { ArrowLink } from "@/components/ui/Button"
+import { MediaSlot } from "@/components/ui/MediaSlot"
+import { assets } from "@/content/assets"
 import { services, type ServiceSlug } from "@/content/services"
 
 const serviceIcons = {
@@ -23,6 +25,14 @@ export function ServiceCapabilities() {
           <p data-reveal="up" className="lead max-w-xl">
             From your first website to a custom app or AI assistant, explore what we can build for your business.
           </p>
+        </div>
+
+        <div data-reveal="image" className="mt-12 overflow-hidden rounded-frame shadow-card lg:mt-16">
+          <MediaSlot
+            asset={assets.capabilitiesStudio}
+            parallax
+            sizes="(min-width: 1024px) 80vw, 100vw"
+          />
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:mt-16 lg:gap-6">
