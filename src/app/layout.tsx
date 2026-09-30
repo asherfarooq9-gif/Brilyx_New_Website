@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: { default: "BRILYX — Digital engineering studio", template: "%s | BRILYX" },
   description: site.description,
   applicationName: "BRILYX",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+  },
   openGraph: {
     type: "website",
     siteName: "BRILYX",
